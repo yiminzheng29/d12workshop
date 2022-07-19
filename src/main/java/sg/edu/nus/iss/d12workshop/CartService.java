@@ -28,6 +28,16 @@ public class CartService {
         itm.setQuantity(8);
         lstItems.add(itm);
 
+        itm = new Item();
+        itm.setItemName("Prada shoe");
+        itm.setQuantity(2);
+        lstItems.add(itm);
+
+        itm = new Item();
+        itm.setItemName("Hermes bag");
+        itm.setQuantity(3);
+        lstItems.add(itm);
+
         return lstItems;
     }
 }

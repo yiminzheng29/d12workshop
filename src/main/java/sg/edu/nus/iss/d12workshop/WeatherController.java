@@ -23,7 +23,7 @@ public class WeatherController {
         return "weather"; // redirects to weather.html
     }
 
-    @GetMapping("(city")
+    @GetMapping("{city}")
     public String weather2(
         @PathVariable(name="city", required=true) String city,
         @RequestParam(name="units", defaultValue="kilometers") String units,
@@ -34,4 +34,6 @@ public class WeatherController {
         model.addAttribute("units", units);
         return "weather";
     }
+
+    
 }
